@@ -1,9 +1,13 @@
+import Card from "../components/Card"
+import Carousel from "../components/Carousel"
 
 
 const Homepage = () => {
   return (
     <>
-        <h1> This is a Homepage </h1>
+        <Carousel />
+        <Card />
+        <Card />
     </>
   )
 }
