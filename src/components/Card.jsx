@@ -1,16 +1,17 @@
-
+import {Link} from "react-router-dom"
 
 const Card = (props) => {
+  const{image,title,price,id} = props.data
   return (
     <>
       
   <div className="col">
     <div className="card">
-      <img src={props.data.image} className="card-img-top" alt="props.data.title"/>
+      <img src={image} className="card-img-top" alt="image"/>
       <div className="card-body">
-        <h5 className="card-title">{props.data.title}</h5>
-        <h5>${props.data.price}</h5>
-        <button className="btn btn-success"> View Details</button>
+        <h5 className="card-title">{title.slice(0,20)}...</h5>
+        <h5>${price}</h5>
+        <Link to={`/productdetails/${id}`} className="btn btn-success"> View Details</Link>
       </div>
     </div>
   </div>
