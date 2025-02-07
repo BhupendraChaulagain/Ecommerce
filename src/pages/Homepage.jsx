@@ -1,4 +1,5 @@
-import Card from "../components/Card"
+
+import CardContainer from "../components/CardContainer"
 import Carousel from "../components/Carousel"
 
 
@@ -6,8 +7,7 @@ const Homepage = () => {
   return (
     <>
         <Carousel />
-        <Card />
-        <Card />
+        <CardContainer/>
     </>
   )
 }
