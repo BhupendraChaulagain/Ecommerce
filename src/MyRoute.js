@@ -4,6 +4,7 @@ import Homepage from './pages/Homepage'
 import Products from './pages/Products'
 import ProductDetails from './pages/ProductDetails'
 import Cart from './pages/Cart'
+import Rejister from './pages/Rejister'
 
 
 
@@ -16,6 +17,7 @@ const MyRoute = () => {
               <Route path = 'products' element = {<Products/>} />
               <Route path='productdetails/:productId' element={<ProductDetails/>}/>
               <Route path='cart' element={<Cart />} />
+              <Route path = 'register' element = {<Rejister/>} />
             </Route>
         </Routes>
     </Router>
